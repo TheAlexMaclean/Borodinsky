@@ -1,0 +1,36 @@
+@font-face {
+  font-weight: normal;
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  src: url("/source/fonts/PTSansNarrow-Regular.woff2") format("woff2"),
+       url("/source/fonts/PTSansNarrow-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: bold;
+  font-family: 'PT Sans Narrow';
+  src: url("/source/fonts/PTSansNarrow-Bold.woff2") format("woff2"),
+       url("/source/fonts/PTSansNarrow-Bold.woff") format("woff");
+
+}
+
+
+body {
+  min-width: 320px;
+  padding: 0;
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  color: #f7f4f1;
+  font-style: normal;
+
+  background-color: $bg-darkgrey;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
