@@ -13,11 +13,11 @@
        <img src="source/img/logotype-mobile.png" width="226" height="30" alt="Барбершоп Бородинсикй" class="page-header__logo-image">
        </a>
        
-       <nav class="main-nav">
-           <button class="main-nav__toggle" type="button">Открыть меню</button>
+       <nav class="main-nav main-nav--closed main-nav--nojs">
+           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
            <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
-                <li class="site-list__item--active">
+                <li class="site-list__item site-list__item--active">
                     <a>Главная</a>
                 </li>
                 <li class="site-list__item">
@@ -36,7 +36,16 @@
             
             <ul class="main-nav__list user-list">
                 <li class="user-list__item">
-                   <a class="user-list__login" href="login.html">Войти</a>
+                   <a class="user-list__login" href="login.html"><svg class="user-list--login-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                       <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                           <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c140 79.160451, 2017/05/06-01:08:21        ">
+                               <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                   <rdf:Description rdf:about=""/>
+                               </rdf:RDF>
+                           </x:xmpmeta>
+                           <?xpacket end="w"?></metadata>
+                       <image id="login.svg" width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBw4DDTMGw8mtAAAAnUlEQVQoz2WQsQoCQQxEX5Zw551gL+g/CFpZWIjfvq2t4DcIForC7bFWeklMN5PJDBOpmBFOtMgPF4rix65BUaleMCfxpSp7ZtHh6VCB5IiOpcMpCl7s2HhLRRCTOrBGOFvBEaUaDCuYJErP/ywmVyW75lsaHuTJU7m524Y7mRGXaWteufg0X/Md1jUKwt+RGCEc6MxX2iiA3jEjwwedgyK01yGkuQAAAABJRU5ErkJggg=="/>
+                   </svg>Войти</a>
                 </li>
             </ul>
             </div>
@@ -50,7 +59,7 @@
        <section class="stats">
            <header class="stats__header">
                <h2 class="visually-hidden">Статистика Барбершопа</h2>
-               <b class="stats__slogan">Стрижка у нас это выгодно!</b>
+               <b class="stats__slogan">Стрижка у нас<br> это выгодно!</b>
                <p class="stats__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
                <small class="stats__legend stats__legend--top">
                    <sup>*</sup> - приведенные данные ложь
@@ -59,7 +68,7 @@
            
            <table class="stats__list">
                <tr>
-                   <td class="stat__value">
+                   <td class="stats__value">
                        1 500<sup>*</sup>
                    </td>
                    <td class="stats__field">
@@ -67,7 +76,7 @@
                    </td>
                </tr>
                <tr>
-                   <td class="stat__value">
+                   <td class="stats__value">
                        7 200
                    </td>
                    <td class="stats__field">
@@ -75,7 +84,7 @@
                    </td>
                </tr>
                <tr>
-                   <td class="stat__value">
+                   <td class="stats__value">
                        90 000
                    </td>
                    <td class="stats__field">
@@ -83,7 +92,7 @@
                    </td>
                </tr>
                <tr>
-                   <td class="stat__value">
+                   <td class="stats__value">
                        500 000<sup>*</sup>
                    </td>
                    <td class="stats__field">
@@ -217,6 +226,7 @@
        </div>
       </div>
    </footer>
-    
+
+   <script src="source/main-nav-js.js"></script>
 </body>
 </html>

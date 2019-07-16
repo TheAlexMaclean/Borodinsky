@@ -1,0 +1,76 @@
+.user-list__login {
+  position: relative;
+  display: block;
+  padding: 26px 21px;
+  padding-left: 49px;
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.user-list--login-icon {
+  position: absolute;
+  top: 27px;
+  left: 21px;
+  width: 16px;
+  height: 16px;
+  opacity: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .user-list {
+	width: 60px;
+	}
+	.user-list__login {
+		width: 60px;
+		height: 70px;
+		padding: 0;
+		font-size: 0;
+	  &:hover .user-list--login-icon {
+		opacity: 1;
+
+		polygon {
+		  fill: #ffffff;
+		}
+	  }
+	}
+	.user-list__login-icon {
+		top: 29px;
+		left: 12px;
+	  opacity: 0.5;
+
+	}
+}
+
+@media (min-width: $desktop-width) {
+  .user-list {
+	width: auto;
+	max-width: 160px;
+  }
+
+  .user-list__login {
+	position: relative;
+	width: auto;
+	height: auto;
+	padding-top: 25px;
+	padding-right: 30px;
+	padding-bottom: 23px;
+	padding-left: 50px;
+
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	&:hover {
+	  color: #000;
+	  background-color: #fff;
+	}
+
+	&:active {
+	  color: rgba(0, 0, 0, 0.3);
+	  background-color: #fff;
+	}
+  }
+}
