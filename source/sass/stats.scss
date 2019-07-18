@@ -191,9 +191,23 @@
 	margin-top: -160px;
   }
   .stats__header {
+	display: block;
 	width: 240px;
   }
+
+  .stats__slogan {
+	width: auto;
+	margin-bottom: 42px;
+  }
+
+  .stats__intro {
+	width: auto;
+	margin-bottom: 32px;
+	padding-right: 30px;
+  }
+
   .stats__list {
+	display: flex;
 	width: 640px;
   }
 
